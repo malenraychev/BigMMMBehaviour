@@ -1,18 +1,23 @@
 {
 	"nodes":[
-		{"id":"5337d68ae8f488d0","type":"text","text":"## Conversations","x":180,"y":-135,"width":250,"height":60},
-		{"id":"45ab0f062663c96f","type":"text","text":"## Scores","x":-125,"y":-135,"width":250,"height":60},
-		{"id":"f096ed08d25dd311","type":"text","text":"## Activity","x":-440,"y":-135,"width":250,"height":60},
-		{"id":"7a81fb42e99220f2","type":"text","text":"# Student","x":-82,"y":-320,"width":165,"height":100},
-		{"id":"248a1eefa78c47df","type":"text","text":"### Base features\n\nuser_id\n[[course]]\n[[test_id]]\ntime(possible connection)","x":-132,"y":40,"width":265,"height":240},
-		{"id":"ffe238b4a5730693","type":"text","text":"### Extend\n\n==[[Fill missing tags via NLP.canvas|Fill missing tags via NLP]]==\n==Use to create feature conversations_per_chat_profile for each id->user_id==\n\n","x":500,"y":40,"width":290,"height":240},
-		{"id":"cd304e614b516334","type":"text","text":"### Base features\n\n[[Chat profile(tag)]]\n[[Message count.canvas|Message count]]\nContent\nstartTime\nendTime\nid -> user_id","x":180,"y":40,"width":265,"height":240},
+		{"id":"a6fe462e556d2ece","x":-400,"y":560,"width":800,"height":620,"color":"3","type":"group","label":"Base features"},
+		{"id":"5dfb688b69269a3b","type":"text","text":"## <span style=\"color:cyan;\">Ilias</span>","x":-124,"y":-680,"width":250,"height":60},
+		{"id":"64d6eae468de9cf9","type":"text","text":"## <span style=\"color:red;\">Manon</span>","x":181,"y":-680,"width":250,"height":60},
+		{"id":"70a0b5b85e84aa96","type":"text","text":"## <span style=\"color:green;\">Malen</span>","x":-419,"y":-680,"width":250,"height":60},
 		{"id":"ed43680c8565c67b","type":"text","text":"### Base features\n\nuser_id\nactivity_id\npost_id?\n[[activity_type.canvas|activity_type]]\n[[course]]\nactivity_started\nactivity_completed\n","x":-760,"y":40,"width":265,"height":240},
 		{"id":"4d56cd8be24f6aca","type":"text","text":"### Extend\n\n<span style=\"color:cyan;\">active_day</span>\n<span style=\"color:cyan;\">gap_days</span>\n<span style=\"color:cyan;\">active_days_count</span>\n<span style=\"color:cyan;\">mean_activity_duration</span>\n==discriminate m_a_d by course and type==\n<span style=\"color:cyan;\">activities_count</span>\n==[quiz_taken_percentage](activity_type.canvas#76c93008e9a2cec6)==\n","x":-460,"y":40,"width":290,"height":320},
-		{"id":"5dfb688b69269a3b","type":"text","text":"## <span style=\"color:cyan;\">Ilias</span>","x":-125,"y":-520,"width":250,"height":60},
-		{"id":"64d6eae468de9cf9","type":"text","text":"## <span style=\"color:red;\">Manon</span>","x":180,"y":-520,"width":250,"height":60},
-		{"id":"70a0b5b85e84aa96","type":"text","text":"## <span style=\"color:green;\">Malen</span>","x":-420,"y":-520,"width":250,"height":60},
-		{"id":"499c8b04897043a2","type":"text","text":"## For ==Suggestions== , wrap with ==","x":-125,"y":-440,"width":250,"height":80}
+		{"id":"f096ed08d25dd311","type":"text","text":"## Activity","x":-440,"y":-135,"width":250,"height":60},
+		{"id":"248a1eefa78c47df","type":"text","text":"### Base features\n\nuser_id\n[[course]]\n[[test_id]]\ntime(possible connection)","x":-132,"y":40,"width":265,"height":240},
+		{"id":"ae250972bf30db6a","type":"text","text":"## Math Results","x":-257,"y":420,"width":250,"height":60},
+		{"id":"41c4fe196eb533bc","type":"text","text":"## Essay Results","x":8,"y":420,"width":250,"height":60},
+		{"id":"f345c4e1a7ad02af","type":"text","text":"user_id\n[[course]]\n==textType==\n==time==\n==text==\n#### content\non_topic, plausible, scope,\nconvincing_ideas, correct\n#### structure\ncoherence, outline, repetition, text_pattern\n#### language\nclarity, spelling, punctuation, word_choice,\nsentence-structure, style\n","x":8,"y":580,"width":250,"height":580},
+		{"id":"f6682b15378f36c5","type":"text","text":"==session_id==\nuser_id\n[[course]]\n==exam_id==\nquestion\npoints\nmax_points\n==time==\n==time_spent==\n==hint_count==\ncorrect","x":-257,"y":580,"width":250,"height":580},
+		{"id":"45ab0f062663c96f","type":"text","text":"## Scores","x":-125,"y":-135,"width":250,"height":60},
+		{"id":"5337d68ae8f488d0","type":"text","text":"## Conversations","x":180,"y":-135,"width":250,"height":60},
+		{"id":"cd304e614b516334","type":"text","text":"### Base features\n\n[[Chat profile(tag)]]\n[[Message count.canvas|Message count]]\nContent\nstartTime\nendTime\nid -> user_id","x":180,"y":40,"width":265,"height":240},
+		{"id":"ffe238b4a5730693","type":"text","text":"### Extend\n\n==[[Fill missing tags via NLP.canvas|Fill missing tags via NLP]]==\n==Use to create feature conversations_per_chat_profile for each id->user_id==\n\n","x":500,"y":40,"width":290,"height":240},
+		{"id":"7a81fb42e99220f2","type":"text","text":"# Student","x":-82,"y":-320,"width":165,"height":100},
+		{"id":"499c8b04897043a2","type":"text","text":"## For ==Suggestions== and ==new paths to explore== wrap with ==","x":-155,"y":-560,"width":312,"height":200}
 	],
 	"edges":[
 		{"id":"f72f5222e5b3e22e","fromNode":"7a81fb42e99220f2","fromSide":"bottom","toNode":"f096ed08d25dd311","toSide":"top"},
@@ -22,6 +27,10 @@
 		{"id":"04c56a3208a9aef4","fromNode":"5337d68ae8f488d0","fromSide":"bottom","toNode":"ffe238b4a5730693","toSide":"top"},
 		{"id":"9dd7c57db0153d95","fromNode":"45ab0f062663c96f","fromSide":"bottom","toNode":"248a1eefa78c47df","toSide":"top"},
 		{"id":"c463f046c8c224b9","fromNode":"f096ed08d25dd311","fromSide":"bottom","toNode":"ed43680c8565c67b","toSide":"top"},
-		{"id":"9094c413a7ce6c92","fromNode":"f096ed08d25dd311","fromSide":"bottom","toNode":"4d56cd8be24f6aca","toSide":"top"}
+		{"id":"9094c413a7ce6c92","fromNode":"f096ed08d25dd311","fromSide":"bottom","toNode":"4d56cd8be24f6aca","toSide":"top"},
+		{"id":"4d19f420e08ba6cc","fromNode":"248a1eefa78c47df","fromSide":"bottom","toNode":"ae250972bf30db6a","toSide":"top"},
+		{"id":"da549107df24eac3","fromNode":"248a1eefa78c47df","fromSide":"bottom","toNode":"41c4fe196eb533bc","toSide":"top"},
+		{"id":"2272e789186f0708","fromNode":"ae250972bf30db6a","fromSide":"bottom","toNode":"f6682b15378f36c5","toSide":"top"},
+		{"id":"3bd950c5036dc900","fromNode":"41c4fe196eb533bc","fromSide":"bottom","toNode":"f345c4e1a7ad02af","toSide":"top"}
 	]
 }
