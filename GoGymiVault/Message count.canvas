@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"7a9c46d992ee4659","type":"text","text":"### Message count","x":-540,"y":-160,"width":220,"height":60},
+		{"id":"9a5db0dd6c2f6a32","type":"text","text":"0","x":-220,"y":-240,"width":85,"height":50},
+		{"id":"f693664eefc7ea02","type":"text","text":"1","x":-220,"y":-150,"width":85,"height":50},
+		{"id":"d5300a3b3ac0dbef","type":"text","text":"2+","x":-220,"y":-40,"width":85,"height":50},
+		{"id":"6f90e6d5b136a65b","type":"text","text":"Drop","x":-100,"y":-240,"width":167,"height":50},
+		{"id":"388758872fbdc105","type":"text","text":"Guidance","x":-100,"y":-150,"width":167,"height":50},
+		{"id":"29e644eac4f3f6e3","type":"text","text":"Conversation","x":-100,"y":-40,"width":167,"height":50}
+	],
+	"edges":[
+		{"id":"9983563ec8ed294b","fromNode":"7a9c46d992ee4659","fromSide":"right","toNode":"d5300a3b3ac0dbef","toSide":"left"},
+		{"id":"0808ca59472495ae","fromNode":"7a9c46d992ee4659","fromSide":"right","toNode":"f693664eefc7ea02","toSide":"left"},
+		{"id":"047cb4019e982703","fromNode":"7a9c46d992ee4659","fromSide":"right","toNode":"9a5db0dd6c2f6a32","toSide":"left"},
+		{"id":"89e62916ad045421","fromNode":"9a5db0dd6c2f6a32","fromSide":"right","toNode":"6f90e6d5b136a65b","toSide":"left"},
+		{"id":"bdac85b330a09661","fromNode":"f693664eefc7ea02","fromSide":"right","toNode":"388758872fbdc105","toSide":"left"},
+		{"id":"4005ebde9a169391","fromNode":"d5300a3b3ac0dbef","fromSide":"right","toNode":"29e644eac4f3f6e3","toSide":"left"}
+	]
+}

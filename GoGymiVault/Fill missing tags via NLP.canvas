@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"e2d7d67fedc76a14","type":"text","text":"Load Dataset","x":-80,"y":-440,"width":250,"height":60},
+		{"id":"1e463c9af6b78b8a","type":"text","text":"Train-Test Split","x":-80,"y":-340,"width":250,"height":60},
+		{"id":"3a3777b913ab4c34","type":"text","text":"Clean","x":-80,"y":-240,"width":250,"height":60},
+		{"id":"35f3ff8474fb9959","type":"text","text":"Tokenize","x":-80,"y":-140,"width":250,"height":60},
+		{"id":"ba1061984a4d416a","type":"text","text":"BERT","x":-80,"y":-40,"width":250,"height":60},
+		{"id":"25f9e487f56e3df6","type":"text","text":"Evaluate on Test set","x":-80,"y":60,"width":250,"height":60},
+		{"id":"9ed5a7764b76bc02","type":"text","text":"Select Best Model","x":-80,"y":160,"width":250,"height":60},
+		{"id":"e99d06747c7b8c4a","type":"text","text":"Predict Probabilities","x":-80,"y":260,"width":250,"height":60},
+		{"id":"dd73172ee60556fe","type":"text","text":"Under threshold","x":60,"y":360,"width":250,"height":60},
+		{"id":"6499c502111adc86","type":"text","text":"Over threshold","x":-220,"y":360,"width":250,"height":60},
+		{"id":"52b9d7132799f3be","type":"text","text":"Fill most probable label","x":-220,"y":460,"width":250,"height":60},
+		{"id":"60db84bbbe26efee","type":"text","text":"Keep entry as NaN","x":60,"y":460,"width":250,"height":60},
+		{"id":"edc111bcc9cc171e","type":"text","text":"Drop all NaN rows","x":-80,"y":560,"width":250,"height":60},
+		{"id":"a112eddcfcaf4d0f","type":"text","text":"Enrich student entries with\n==conversations_per_chat_profile==\nfeature","x":-80,"y":660,"width":250,"height":120}
+	],
+	"edges":[
+		{"id":"a2c1fa8ec20f22ad","fromNode":"25f9e487f56e3df6","fromSide":"right","toNode":"1e463c9af6b78b8a","toSide":"right"},
+		{"id":"4606e4e1dd1dc7a1","fromNode":"e2d7d67fedc76a14","fromSide":"bottom","toNode":"1e463c9af6b78b8a","toSide":"top"},
+		{"id":"0bbc7e58ce06e42a","fromNode":"1e463c9af6b78b8a","fromSide":"bottom","toNode":"3a3777b913ab4c34","toSide":"top"},
+		{"id":"306497a962ff4870","fromNode":"3a3777b913ab4c34","fromSide":"bottom","toNode":"35f3ff8474fb9959","toSide":"top"},
+		{"id":"d69c07330069255a","fromNode":"35f3ff8474fb9959","fromSide":"bottom","toNode":"ba1061984a4d416a","toSide":"top"},
+		{"id":"a153ccbce3f09805","fromNode":"ba1061984a4d416a","fromSide":"bottom","toNode":"25f9e487f56e3df6","toSide":"top"},
+		{"id":"0bd667e52c330266","fromNode":"25f9e487f56e3df6","fromSide":"bottom","toNode":"9ed5a7764b76bc02","toSide":"top"},
+		{"id":"e9b31d5d5d344879","fromNode":"9ed5a7764b76bc02","fromSide":"bottom","toNode":"e99d06747c7b8c4a","toSide":"top"},
+		{"id":"38717d5f4e26cc83","fromNode":"e99d06747c7b8c4a","fromSide":"bottom","toNode":"6499c502111adc86","toSide":"top"},
+		{"id":"efa25da1d017440a","fromNode":"e99d06747c7b8c4a","fromSide":"bottom","toNode":"dd73172ee60556fe","toSide":"top"},
+		{"id":"e99755e2d03e2284","fromNode":"6499c502111adc86","fromSide":"bottom","toNode":"52b9d7132799f3be","toSide":"top"},
+		{"id":"2157860f2708eff0","fromNode":"dd73172ee60556fe","fromSide":"bottom","toNode":"60db84bbbe26efee","toSide":"top"},
+		{"id":"485e6869d5611e6f","fromNode":"52b9d7132799f3be","fromSide":"bottom","toNode":"edc111bcc9cc171e","toSide":"top"},
+		{"id":"d4f5a1631ca8b396","fromNode":"60db84bbbe26efee","fromSide":"bottom","toNode":"edc111bcc9cc171e","toSide":"top"},
+		{"id":"0f5069efb96648f7","fromNode":"edc111bcc9cc171e","fromSide":"bottom","toNode":"a112eddcfcaf4d0f","toSide":"top"}
+	]
+}
