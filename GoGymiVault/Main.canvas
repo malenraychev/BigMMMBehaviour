@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"577514020545d308","x":-730,"y":1700,"width":1461,"height":560,"color":"2","type":"group","label":"Final features"},
 		{"id":"a6fe462e556d2ece","x":-400,"y":560,"width":800,"height":620,"color":"3","type":"group","label":"Base features"},
 		{"id":"5dfb688b69269a3b","type":"text","text":"## <span style=\"color:cyan;\">Ilias</span>","x":-124,"y":-680,"width":250,"height":60},
 		{"id":"64d6eae468de9cf9","type":"text","text":"## <span style=\"color:red;\">Manon</span>","x":181,"y":-680,"width":250,"height":60},
@@ -17,7 +18,13 @@
 		{"id":"cd304e614b516334","type":"text","text":"### Base features\n\n[[Chat profile(tag)]]\n[[Message count.canvas|Message count]]\nContent\nstartTime\nendTime\nid -> user_id","x":180,"y":40,"width":265,"height":240},
 		{"id":"ffe238b4a5730693","type":"text","text":"### Extend\n\n==[[Fill missing tags via NLP.canvas|Fill missing tags via NLP]]==\n==Use to create feature conversations_per_chat_profile for each id->user_id==\n\n","x":500,"y":40,"width":290,"height":240},
 		{"id":"7a81fb42e99220f2","type":"text","text":"# Student","x":-82,"y":-320,"width":165,"height":100},
-		{"id":"499c8b04897043a2","type":"text","text":"## For ==Suggestions== and ==new paths to explore== wrap with ==","x":-155,"y":-560,"width":312,"height":200}
+		{"id":"499c8b04897043a2","type":"text","text":"## For ==Suggestions== and ==new paths to explore== wrap with ==","x":-155,"y":-560,"width":312,"height":200},
+		{"id":"8ab60ba195d6862f","x":520,"y":550,"width":250,"height":60,"type":"text","text":"## time + user_id"},
+		{"id":"016336ce53115071","type":"text","text":"## time + user_id","x":-752,"y":550,"width":250,"height":60},
+		{"id":"a9ff5443ffab1fc0","type":"text","text":"### Extend\n\n???\n\n","x":-257,"y":1320,"width":250,"height":240},
+		{"id":"281a369706ff5f10","type":"text","text":"### Extend\n\n???\n\n","x":8,"y":1320,"width":250,"height":240},
+		{"id":"e8de17ff3dde0a64","x":-710,"y":1720,"width":703,"height":520,"type":"text","text":"# Input"},
+		{"id":"1ae4f3857bc1d1cc","type":"text","text":"# Output","x":8,"y":1720,"width":703,"height":520}
 	],
 	"edges":[
 		{"id":"f72f5222e5b3e22e","fromNode":"7a81fb42e99220f2","fromSide":"bottom","toNode":"f096ed08d25dd311","toSide":"top"},
@@ -31,6 +38,14 @@
 		{"id":"4d19f420e08ba6cc","fromNode":"248a1eefa78c47df","fromSide":"bottom","toNode":"ae250972bf30db6a","toSide":"top"},
 		{"id":"da549107df24eac3","fromNode":"248a1eefa78c47df","fromSide":"bottom","toNode":"41c4fe196eb533bc","toSide":"top"},
 		{"id":"2272e789186f0708","fromNode":"ae250972bf30db6a","fromSide":"bottom","toNode":"f6682b15378f36c5","toSide":"top"},
-		{"id":"3bd950c5036dc900","fromNode":"41c4fe196eb533bc","fromSide":"bottom","toNode":"f345c4e1a7ad02af","toSide":"top"}
+		{"id":"3bd950c5036dc900","fromNode":"41c4fe196eb533bc","fromSide":"bottom","toNode":"f345c4e1a7ad02af","toSide":"top"},
+		{"id":"dbb588c2d7539cb0","fromNode":"a6fe462e556d2ece","fromSide":"right","toNode":"8ab60ba195d6862f","toSide":"bottom"},
+		{"id":"27abf8cffb0ab8f9","fromNode":"8ab60ba195d6862f","fromSide":"top","toNode":"cd304e614b516334","toSide":"bottom"},
+		{"id":"d3a60bc9e0abe563","fromNode":"a6fe462e556d2ece","fromSide":"left","toNode":"016336ce53115071","toSide":"bottom"},
+		{"id":"b07215d13405008c","fromNode":"016336ce53115071","fromSide":"top","toNode":"ed43680c8565c67b","toSide":"bottom"},
+		{"id":"7d04f6d53b7c1396","fromNode":"f6682b15378f36c5","fromSide":"bottom","toNode":"a9ff5443ffab1fc0","toSide":"top"},
+		{"id":"f81bf9137b1cc297","fromNode":"f345c4e1a7ad02af","fromSide":"bottom","toNode":"281a369706ff5f10","toSide":"top"},
+		{"id":"671304804b7f62a1","fromNode":"7a81fb42e99220f2","fromSide":"left","toNode":"577514020545d308","toSide":"left"},
+		{"id":"fb6ac18db45f1979","fromNode":"7a81fb42e99220f2","fromSide":"right","toNode":"577514020545d308","toSide":"right"}
 	]
 }
